@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="page_title">-->
+<!--        <item name="android:textColor">@color/titles</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:textSize">21sp</item>-->
+<!--    </style>-->
+    <style name="page_title">
+        <item name="android:textColor">@color/titles</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="icon">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:tint">@color/icon</item>
+    </style>
+    <style name="active_icon">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:tint">@color/active_icon</item>
+    </style>
+    <style name="big_titles">
+        <item name="android:textColor">@color/titles</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="badge">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">153dp</item>
+    </style>
+    <style name="badge_content">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">113dp</item>
+    </style>
+    <style name="small_boxs">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">98dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="medium_boxs">
+        <item name="android:layout_height">170.6dp</item>
+        <item name="android:layout_width">204dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="long_boxs">
+        <item name="android:layout_height">105dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="smallbox_content">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

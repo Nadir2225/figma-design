@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="first_grad">#FF25196B</color>
+    <color name="second_grad">#FFD994A7</color>
+    <color name="third_grad">#FF94D9B4</color>
+    <color name="fourth_grad">#FF7497EF</color>
+    <color name="titles">#FF595085</color>
+    <color name="icon">#FF8B97A8</color>
+    <color name="active_icon">#FF3D3270</color>
+    <color name="content_blue">#FF403572</color>
+    <color name="content_red">#FFFF3726</color>
+    <color name="content_green">#FF479696</color>
+    <color name="content_purple">#FFC93F8D</color>
+    <color name="background_blue">#FFF6F5FB</color>
+    <color name="background_red">#FFFFF4F4</color>
+    <color name="background_green">#FFF5F9F9</color>
+    <color name="background_purple">#FFFDF9FB</color>
+</resources>

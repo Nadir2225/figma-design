@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                style="@style/big_titles"
+                android:text="News"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="30dp"
+                        app:cardCornerRadius="15dp"
+                        style="@style/badge">
+                        <ImageView
+                            android:id="@+id/bg_grad"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/grad1" />
+                        <ImageView
+                            android:id="@+id/header_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/badge_bg" />
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_height="wrap_content"
+                            style="@style/badge_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Short news title will be here"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="10dp"
+                        app:cardCornerRadius="15dp"
+                        style="@style/badge">
+                        <ImageView
+                            android:id="@+id/bg_grad2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/grad2" />
+                        <ImageView
+                            android:id="@+id/header_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/badge_bg2" />
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_height="wrap_content"
+                            style="@style/badge_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Short news title will be here"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="15dp"
+                        style="@style/badge">
+                        <ImageView
+                            android:id="@+id/bg_grad3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/grad3" />
+                        <ImageView
+                            android:id="@+id/header_image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/badge_bg3" />
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_height="wrap_content"
+                            style="@style/badge_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Short news title will be here"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                style="@style/big_titles"
+                android:text="Daily Tasks:"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    style="@style/small_boxs"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/background_blue"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/smallbox_content"
+                        android:textColor="@color/content_blue"
+                        android:text="Daily astromeditation"
+                        android:layout_gravity="top|start"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/content_blue"
+                            android:text="3"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/green_traced"
+                            android:paddingTop="10dp"
+                            app:tint="@color/content_blue" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/small_boxs"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/background_red"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallbox_content"
+                        android:text="Daily sleep astromeditation"
+                        android:textColor="@color/content_red"
+                        android:layout_gravity="top|start"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="1"
+                            android:textSize="24dp"
+                            android:textColor="@color/content_red"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/green_traced"
+                            android:paddingTop="10dp"
+                            app:tint="@color/content_red" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/small_boxs"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/background_green"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallbox_content"
+                        android:text="Daily mantra"
+                        android:textColor="@color/content_green"
+                        android:layout_gravity="top|start"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="2"
+                            android:textSize="24dp"
+                            android:textColor="@color/content_green"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/green_traced"
+                            android:paddingTop="10dp"
+                            app:tint="@color/content_green" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/content_blue"
+                    android:textSize="18sp"
+                    android:text="Your overall progress is "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/content_purple"
+                    android:text="60%"/>
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/horizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_height="5dp"
+                android:progress="60"
+                android:max="100"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:padding="0dp"
+                android:progressTint="@color/content_purple"
+                android:progressBackgroundTint="@color/background_purple"/>
+            <LinearLayout
+                style="@style/long_boxs"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/background_blue"
+                android:background="@drawable/border_radius"
+                android:layout_marginHorizontal="30dp"
+                android:padding="20dp"
+                android:paddingEnd="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calendar"
+                        app:tint="@color/content_blue" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_blue"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:text="How was your day?"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_blue"
+                        android:textSize="11sp"
+                        android:text="Lorem ipsum dolor sit amet,consectetur adipscing elit. Ut vel odio en urna ultrice..."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow_right"
+                        android:layout_gravity="center"
+                        app:tint="@color/content_blue" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/long_boxs"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/background_red"
+                android:background="@drawable/border_radius"
+                android:layout_marginHorizontal="30dp"
+                android:padding="20dp"
+                android:paddingEnd="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock"
+                        app:tint="@color/content_red" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_red"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:text="Current Transist: 3rd House"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffA27A7A"
+                        android:textSize="11sp"
+                        android:text="This is demonstrate siblings, hobbies, efforts, confidence, friends and short tr..."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        app:tint="@color/content_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow_right"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
