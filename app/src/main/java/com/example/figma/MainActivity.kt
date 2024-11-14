@@ -1,6 +1,7 @@
 package com.example.figma
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+    private var pageName = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,10 +21,20 @@ class MainActivity : AppCompatActivity() {
         loadFragment(Home())
         bottomBar.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> loadFragment(Home())
-                R.id.nav_user -> loadFragment(Profile())
-                else -> loadFragment(Soon())
+                R.id.nav_home -> {
+                    pageName = "Home"
+                    loadFragment(Home())
+                }
+                R.id.nav_user -> {
+                    pageName = "Profile"
+                    loadFragment(Profile())
+                }
+                else -> {
+                    pageName = "Coming Soon"
+                    loadFragment(Soon())
+                }
             }
+            updatePageName()
             true
         }
 
@@ -33,9 +45,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun loadFragment(fragment: Fragment) {
+    private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
+    }
+    private fun updatePageName() {
+        findViewById<TextView>(R.id.toolbar_title)?.text = pageName
     }
 }
