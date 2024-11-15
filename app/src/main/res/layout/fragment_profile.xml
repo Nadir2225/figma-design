@@ -5,10 +5,208 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Profile" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/img"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_badge"
+                        android:layout_alignEnd="@id/img"
+                        android:layout_marginEnd="-20dp"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angelica Jackson"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/content_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Analyzer"
+                        android:textSize="14dp"
+                        android:textColor="?attr/colorOutline"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/content_blue"
+                        android:text="Change profile"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/content_blue"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="Strong side:"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/background_green"
+                    android:background="@drawable/border_radius2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Analytics"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/content_green"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="96dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/background_green"
+                    android:background="@drawable/border_radius2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perfectionism"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/content_green"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/background_green"
+                    android:background="@drawable/border_radius2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Analytics"
+                        android:textColor="@color/content_green"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/content_blue"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="Weak side:"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="96dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/background_red"
+                    android:background="@drawable/border_radius2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perfectionism"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/content_red"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/background_red"
+                    android:background="@drawable/border_radius2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Analytics"
+                        android:textColor="@color/content_red"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                style="@style/big_titles"
+                android:text="My Reports:"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

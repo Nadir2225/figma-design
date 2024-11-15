@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomBar: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
+
         loadFragment(Home())
         bottomBar.setOnItemSelectedListener { item ->
             when (item.itemId) {
