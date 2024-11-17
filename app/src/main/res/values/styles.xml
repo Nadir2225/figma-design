@@ -39,9 +39,11 @@
         <item name="android:padding">10dp</item>
     </style>
     <style name="medium_boxs">
-        <item name="android:layout_height">170.6dp</item>
-        <item name="android:layout_width">204dp</item>
-        <item name="android:padding">10dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_width">143dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
     <style name="long_boxs">
         <item name="android:layout_height">105dp</item>

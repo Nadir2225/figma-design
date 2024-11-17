@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Profile">
 
     <ScrollView
@@ -204,6 +205,172 @@
                 android:layout_marginStart="30dp"
                 style="@style/big_titles"
                 android:text="My Reports:"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:columnOrderPreserved="false"
+                android:paddingTop="16dp"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    style="@style/medium_boxs"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/background_blue"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/save"
+                        app:tint="@color/content_blue"
+                        android:layout_gravity="top|end"
+                        android:layout_marginEnd="10dp" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="10dp"
+                        app:tint="@color/content_blue"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:text="Astro- psychological report"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_blue"
+                        android:textSize="10sp"
+                        android:text="Some short description of this type of report."
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/medium_boxs"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/background_green"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/save"
+                        app:tint="@color/content_green"
+                        android:layout_gravity="top|end"
+                        android:layout_marginEnd="10dp" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="10dp"
+                        app:tint="@color/content_green"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_green"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:text="Monthly prediction report"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_green"
+                        android:textSize="10sp"
+                        android:text="Some short description of this type of report."
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/medium_boxs"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/background_red"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/save"
+                        app:tint="@color/content_red"
+                        android:layout_gravity="top|end"
+                        android:layout_marginEnd="10dp" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="10dp"
+                        app:tint="@color/content_red"
+                        android:src="@drawable/check" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_red"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:text="Daily Prediction"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_red"
+                        android:textSize="10sp"
+                        android:text="Some short description of this type of report."
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/medium_boxs"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/background_purple"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="18dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="10dp"
+                        app:tint="@color/content_purple"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_purple"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:text="Love report"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/content_purple"
+                        android:textSize="10sp"
+                        android:text="Some short description of this type of report."
+                        />
+
+                </LinearLayout>
+
+            </GridLayout>
 
         </LinearLayout>
 
